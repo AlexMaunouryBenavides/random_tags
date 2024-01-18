@@ -24,6 +24,9 @@ function Tags() {
 	function ResetTags() {
 		setTags([]);
 	}
+	function resetRandom() {
+		setRandomTagDisplayed('');
+	}
 
 	return (
 		<>
@@ -74,9 +77,9 @@ function Tags() {
 					<div className="flex md:gap-5">
 						<h2 className="uppercase font-bold text-3xl text-[#F25F5C]">element random</h2>
 						<button
-							onClick={ResetTags}
+							onClick={resetRandom}
 							className="uppercase font-bold text-xl text-[#495867] bg-[#87C38F] p-2 rounded-lg ">
-							Reset Tags
+							Reset Random
 						</button>
 					</div>
 					{randomTagDisplayed ? (
